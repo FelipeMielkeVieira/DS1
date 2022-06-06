@@ -11,6 +11,7 @@
         <h2>Cadastrar Produto</h2>
         <hr>
         <nav>
+            <a href="./principal.html"> Início</a>
             <a href="./index.html">Produtos</a>
             <a href="./usuario.html">Usuários</a>
         </nav>
@@ -22,23 +23,17 @@
             <fieldset>
                 <legend>Produtos</legend> <br/>
                 <label for="nome">Nome:</label> <br/>
-                <input type="text" id="nome" placeholder=""> <br/> <br/>
+                <input type="text" id="nome" placeholder="" required> <br/> <br/>
 
                 <label for="desc"> Descrição:</label> <br/>
-                <input type="text" id="desc" placeholder=""> <br/> <br/>
+                <input type="text" id="desc" placeholder="" required> <br/> <br/>
 
                 <label for="preco">Preço:</label> <br/>
-                <input type="text" id="preco" placeholder="RS 0,00"> <br/> <br/>
+                <input type="text" id="preco" placeholder="RS 0,00" required> <br/> <br/>
 
-                <label for="categoria">Categoria:</label> <br/>
-                <label id="categoria" for="botao1">Comidas</label> 
-                <input type="radio" id="botao1"> <br/>
-
-                <label id="categoria" for="botao2">Papelaria</label> 
-                <input type="radio" id="botao2"> <br/>
-
-                <label id="categoria" for="botao3">Eletrônicos</label> 
-                <input type="radio" id="botao3"> <br/>
+                <input type="checkbox" name="categoria"> Comida <br/>
+                <input type="checkbox" name="categoria"> Papelaria <br/>
+                <input type="checkbox" name="categoria"> Eletrônicos <br/>
                 <br/>
                 <input type="submit" value="Cadastrar">
             </fieldset>
