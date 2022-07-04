@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(124, 124, 196);
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#tituloSite1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#tituloSite2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    display: inline;
+}
+
+main {
+    padding: 2%;
+}
+
+#tituloConteudo1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+#Pagina1p1 {
+    color: aqua;
+}
+
+#Pagina1p2 {
+    color: blueviolet;
+}
+
+#Pagina1p3 {
+    color: royalblue;
+}
+
+#Pagina1p4 {
+    color: indianred;
+}
+
+#Pagina1p5 {
+    color: brown;
+}
+
+#Pagina1p6 {
+    color: magenta;
+}
+
+#Pagina1p7 {
+    color: turquoise;
+}
+
+#Pagina1p8 {
+    color: lawngreen;
+}
+
+#Pagina1p9 {
+    color: hotpink;
+}
+
+#Pagina1p10 {
+    color: navy;
+}
+
+#cidade1 {
+    left: 1vw;
+    width: 18vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#cidade2 {
+    left: 21vw;
+    width: 18vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#cidade3 {
+    left: 41vw;
+    width: 18vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#cidade4 {
+    left: 61vw;
+    width: 18vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#cidade5 {
+    left: 81vw;
+    width: 18vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+img {
+    width: 80%;
+    height: 120px;
+}
+
+.paragrafo {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: brown;
+}
+
+#pagina3 {
+    background-color: aqua;
+    height: 80vh;
+}
+
+#sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: red;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 100px;
+    left: 620px;
+}
+
+#fixed {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 100px;
+    background-color: red;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
