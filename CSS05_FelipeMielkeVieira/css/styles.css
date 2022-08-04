@@ -1,0 +1,86 @@
+p {
+    overflow: auto;
+}
+
+#p1 {
+    border: 1px solid black;
+    background-color: aquamarine;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+#img1 {
+    float: left;
+}
+
+#p2 {
+    border: 1px solid blue;
+    background-color: black;
+    color: red;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 17px;
+}
+
+#img2 {
+    float: right;
+}
+
+#p3 {
+    border: 1px solid red;
+    background-color: rgb(127, 255, 180);
+    color: palevioletred;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+#img3 {
+    float: left;
+}
+
+#img4 {
+    float: right;
+}
+
+#p4 {
+    border: 1px solid blueviolet;
+    background-color: tomato;
+    color: violet;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    clear: left;
+}
+
+#img5 {
+    float: left;
+}
+
+#p5 {
+    border: 1px solid wheat;
+    background-color: tan;
+    color: lawngreen;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 19px;
+    clear: right;
+}
+
+#img6 {
+    float: right;
+}
+
+#p6 {
+    border: 1px solid rgb(194, 33, 33);
+    background-color: rgb(127, 140, 255);
+    color: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    clear: both;
+}
+
+#img7 {
+    float: left;
+}
+
+#img8 {
+    float: right;
+}
