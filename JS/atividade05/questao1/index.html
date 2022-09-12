@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="linha">
+        <div class="modal">
+            <input type="number" id="altura" placeholder="Altura">
+            <input type="number" id="peso" placeholder="Peso">
+            <button onclick="calculaImc()">Calcular</button>
+            <span id="imc">IMC Atual: </span>
+            <span id="categoria">Categoria Atual: </span>
+        </div>
+        <div class="tabela">
+            <table>
+                <tr>
+                    <th>IMC</th>
+                    <th>CATEGORIA</th>
+                </tr>
+                <tr>
+                    <td class="fundoVerde">Até 18,5</td>
+                    <td>Abaixo do Peso</td>
+                </tr>
+                <tr>
+                    <td class="fundoVerde">De 18,5 - 24,9</td>
+                    <td>Saudável</td>
+                </tr>
+                <tr>
+                    <td class="fundoVerde">De 25,0 - 29,9</td>
+                    <td>Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td class="fundoVerde">De 30,0 - 39,9</td>
+                    <td>Obeso</td>
+                </tr>
+                <tr>
+                    <td class="fundoVerde">Acima de 40</td>
+                    <td>Extremo ou alto risco de obesidade</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

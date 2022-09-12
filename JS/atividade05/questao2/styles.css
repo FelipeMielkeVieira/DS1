@@ -1,0 +1,11 @@
+.modal {
+  margin: 30px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  min-height: 200px;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  border-radius: 8px;
+}
