@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagens/logo-getpizza.png">
+    <link rel="stylesheet" href="../css/sabores.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>GetPizza</title>
+</head>
+<body>
+    <header>
+        <img class="logoPizzaria" src="../imagens/logo-getpizza.png">
+    </header>
+    <nav>
+        <a href="/">Dados Pessoais</a>
+        <a href="./tamanho">Tamanho</a>
+        <a href="./sabores" style="text-decoration: underline;">Sabores</a>
+        <a href="./adicionais">Adicionais</h4>
+        <a href="./entrega">Entrega e Pagamento</a>
+        <a href="./confirma">Confirmação</a>
+    </nav>
+    <main>
+        <div class="divPrincipal">
+            <div id="headForm">
+                <div class="tituloAdicional">
+                    <h2>Sabores</h2>
+                    <h6 id="numeroSabores"></h6>
+                </div>
+                <button onclick="avancarForms(4)" class="botaoProximo">Próximo</button>
+            </div>
+            <div class="divSabores">
+                
+            </div>
+        </div>
+    </main>
+    <script src="../pedido.js"></script>
+    <script src="../sabores.js"></script>
+</body>
+</html>

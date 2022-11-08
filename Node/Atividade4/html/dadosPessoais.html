@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagens/logo-getpizza.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>GetPizza</title>
+</head>
+<body>
+    <header>
+        <img class="logoPizzaria" src="../imagens/logo-getpizza.png">
+    </header>
+    <nav>
+        <a href="/" style="text-decoration: underline;">Dados Pessoais</a>
+        <a href="./tamanho">Tamanho</a>
+        <a href="./sabores">Sabores</a>
+        <a href="./adicionais">Adicionais</h4>
+        <a href="./entrega">Entrega e Pagamento</a>
+        <a href="./confirma">Confirmação</a>
+    </nav>
+    <main>
+        <div class="divPrincipal">
+            <div id="headForm">
+                <h2>Dados Pessoais</h2>
+                <button onclick="avancarForms(2)" class="botaoProximo">Próximo</button>
+            </div>
+            <div class="divInputs">
+                <div class="input">
+                    <label for="nomePessoa">Nome:</label>
+                    <input id="nomePessoa" class="inputDados">
+                </div>
+                <div class="input">
+                    <label for="cpfPessoa">CPF:</label>
+                    <input id="cpfPessoa" class="inputDados">
+                </div>
+            </div>
+            <div class="divInputs">
+                <div class="input">
+                    <label for="emailPessoa">Email:</label>
+                    <input id="emailPessoa" class="inputDados">
+                </div>
+                <div class="input">
+                    <label for="telefonePessoa">Telefone:</label>
+                    <input id="telefonePessoa" class="inputDados">
+                </div>
+            </div>
+            <div class="divInputs">
+                <div class="input">
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" class="inputDados">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../pedido.js"></script>
+</body>
+</html>
