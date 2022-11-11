@@ -57,9 +57,27 @@ function cancelarPedido() {
 }
 
 function confirmarPedido() {
-    localStorage.clear();
-    alert("Pedido confirmado com sucesso!");
-    window.location.href = "/";
+    fetch("/endereco", { method: "POST", body: localStorage.getItem("ENTREGA"), headers: { "Content-Type": "application/json" } }).then((res) => {
+        fetch("/cliente", { method: "POST", body: localStorage.getItem("DADOSPESSOAIS"), headers: { "Content-Type": "application/json" } }).then(() => {
+            let dadosCliente = JSON.parse(localStorage.getItem("DADOSPESSOAIS"));
+            let adicionais = JSON.parse(localStorage.getItem("ADICIONAIS"));
+            let bebidas = JSON.parse(localStorage.getItem("BEBIDAS"));
+            let entrega = JSON.parse(localStorage.getItem("ENTREGA"));
+            let tamanho = JSON.parse(localStorage.getItem("TAMANHO"));
+            let sabores = JSON.parse(localStorage.getItem("SABORES"));
+            let precoTotal = adicionais.preco + bebidas[0].preco + entrega.preco + tamanho.preco;
+            fetch("/pedido", { method: "POST", body: JSON.stringify({ cpf: dadosCliente.cpf, cep: entrega.cep, preco: precoTotal, data: new Date().toISOString().slice(0, 19) }), headers: { "Content-Type": "application/json" } }).then(() => {
+                // for (const sabor of sabores) {
+                //     fetch("http://localhost:8081/pedido-sabor", { method: "POST", body: JSON.stringify(id: sabor.id), headers: { "Content-Type": "application/json" } }).then(() => {
+
+                //     })
+                // }
+                localStorage.clear();
+                alert("Pedido confirmado com sucesso!");
+                window.location.href = "/";
+            })
+        })
+    })
 }
 
 function getPrecoBRL(preco) {
