@@ -41,6 +41,10 @@ app.get("/confirma", (req, res) => {
     res.sendFile(__dirname + "/html/confirma.html");
 })
 
+app.get("/consulta-produtos", (req, res) => {
+    res.sendFile(__dirname + "/html/consultaProdutos.html");
+})
+
 app.get("/get-sabores", (req, res) => {
     sql.query("select * from sabor", (err, results, fields) => {
         res.json(results);

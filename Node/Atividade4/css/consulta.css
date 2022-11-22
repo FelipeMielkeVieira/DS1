@@ -1,0 +1,58 @@
+#modalCadastro {
+    width: 20vw;
+    height: 40vh;
+    position: fixed;
+    background-color: white;
+    left: 40vw;
+    top: 20vh;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloModalCadastro {
+    font-size: 34px;
+    color: #052CE6;
+    margin-bottom: 15px;
+}
+
+.inputCadastroModal {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px;
+}
+
+.inputsModalCadastro {
+    padding-left: 5px;
+    outline: none;
+    padding: 2px;
+}
+
+.divBotoesCadastro {
+    margin-top: 10px;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.botaoCancelarCadastro {
+    padding: 6px;
+    background-color: rgb(201, 200, 200);
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botaoConfirmarCadastro {
+    padding: 6px;
+    background-color: #052CE6;
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -225,3 +225,7 @@ function selecionarPagamento(idPag) {
         pagamento.classList.add("selected-pagamento");
     }
 }
+
+function consultarProdutos() {
+    window.location.href = "consulta-produtos";
+}
